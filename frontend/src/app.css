@@ -1,0 +1,197 @@
+/* *{
+    background-color: rgb(3, 6, 5);
+    color: white;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap');
+
+body{
+    margin: 0;
+}
+#welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbf0e9;
+
+}
+#img{
+    background-image: url('./assets/heart.jpg');
+    background-size: auto;                 
+    background-position: center;            
+    background-repeat: no-repeat;
+    background-attachment: auto; 
+
+    height: 600px;
+    width: 450px;
+    border-radius: 0px 0px 45% 45%;
+
+    color: white;
+
+}
+
+#img > h1{
+    color: white;
+}
+
+#msg{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 25px;
+    font-size: 20px;
+    font-style: normal;
+    color: rgb(255, 33, 115);
+}
+
+#predict{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+#predict >button{
+    margin-top: 10px;
+    color: rgb(255, 33, 115);
+}
+
+#predict > button:hover {
+    box-shadow: rgb(255, 33, 115) 0 0 0 3px, transparent 0 0 0 0;
+  }
+
+#form-vis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#form-comp{
+    background-color: white;
+    width: max-content;
+    /* padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px; */
+}
+
+h1{
+    text-align: center;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    /* color: rgb(154, 0, 250) solid; */
+    color: rgb(184, 1, 239);
+    font-size: 40px;
+
+    
+}
+
+#form-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form{
+    border: 1px rgb(154, 0, 250) solid;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+#fields{
+    padding: 5px;
+    
+}
+
+input{
+    height: 35px;
+    width: 250px;
+    margin: 10px;
+    border: 1px solid rgb(222, 217, 217);
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Signika", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "GRAD" 0;
+    font-size: 15px;
+}
+
+
+/* CSS */
+#pred-button {
+    height: 35px;
+    width: 250px;
+    margin: 10px;
+    border: none;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color:  rgb(154, 0, 250);
+    cursor: pointer;
+    display: inline-flex;
+    flex: 1 1 auto;
+    font-family: Inter,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s,-webkit-box-shadow .2s;
+    white-space: nowrap;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#pred-button:hover {
+  box-shadow: rgb(154, 0, 250) 0 0 0 3px, transparent 0 0 0 0;
+}
+
+
+#results{
+    text-align: center;
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    /* color: rgb(154, 0, 250) solid; */
+    color: rgb(59, 7, 74);
+}
+
+
+/* CSS */
+#back-button {
+  background-image: linear-gradient(#8614f8 0, #760be0 100%);
+  border-radius: 5px;
+  width: 200px;
+  font-family: sans-serif;
+  color: white;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .3s cubic-bezier(.05, .03, .35, 1);
+  user-select: none;
+  
+}
+
+#back-button:hover {
+  opacity: .7;
+}
