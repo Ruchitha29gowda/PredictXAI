@@ -36,10 +36,10 @@ def predict():
 
         # Extract the required features for prediction (assuming you know the order)
         required_features = [
-            features[1],  # sex
             features[2],  # cp
-            features[3],  # trestbps
-            features[7],  # thalach
+            features[8],  # exang
+            features[9],  # oldpeak
+            features[10],  # slope
             features[11], # ca
             features[12], # thal
         ]
@@ -53,10 +53,10 @@ def predict():
         
         
         required_features = [
-            features_scaled[0][1],  # sex
             features_scaled[0][2],  # cp
-            features_scaled[0][3],  # trestbps
-            features_scaled[0][7],  # thalach
+            features_scaled[0][8],  # exang
+            features_scaled[0][9],  # oldpeak
+            features_scaled[0][10],  # slope
             features_scaled[0][11], # ca
             features_scaled[0][12], # thal
         ]
